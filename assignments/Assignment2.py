@@ -46,7 +46,7 @@ average = sum(scores)/len(scores)
 handicap = (210 - average) * .9 #for representing 90% I use 0.9, subtracting the
 average score from basis score
 handicap = int(handicap) #use int so I will get only the whole number and not the
-deicmals and I will not round
+#deicmals and I will not round
 print("Your handicap is:", handicap)
 # =============================================================================
 #
@@ -137,8 +137,7 @@ in whch the file is saved
 total_count = 0 #initialization
 f = open("ClickStream.csv", "r") #open the file in read mode
 for line in f: #loop goes through each line of the file, one at the time
-line = line.strip() # Removes any extra spaces or newlines (make sure there
-are not unwanted cahraceters or spaces )
+line = line.strip() # Removes any extra spaces or newlines (make sure there are not unwanted cahraceters or spaces )
 parts = line.split(",") # Splits the line into a list of values based on the
 commas
 total_count += int(parts[3]) # access the 4th value which refers to number of
